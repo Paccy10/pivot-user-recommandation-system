@@ -14,7 +14,6 @@ class Tweet(models.Model):
     reply_to_tweet_id = models.BigIntegerField(null=True)
     reply_to_user_id = models.BigIntegerField(null=True)
     retweet_to_tweet_id = models.BigIntegerField(null=True)
-    reply_to_user_id = models.BigIntegerField(null=True)
     retweet_to_user_id = models.BigIntegerField(null=True)
     hashtags = models.CharField(max_length=250, null=True)
     created_at = models.DateTimeField(null=False)
